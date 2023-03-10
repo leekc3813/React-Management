@@ -1,25 +1,19 @@
 import './App.css';
 import React from 'react';
-import {Button, Input} from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react'
+import Comments from './comment.js'
 
-function Login() {
-  return(
-    <div>
-      <Input />
-      <Button primary>로그인!</Button>
-    </div>
-  )
-}
+import hr from "./hr.jpeg"
+import human from "./people.jpg"
+
 
 
 function App() {
   return (
     <div>
-      <p> 안녕하세요</p>
-      <button>하이하이</button>
-      <Button >하이하이</Button>
-      <Login />
-    </div>
+      <Image src = {hr} centered />
+      <Comments />
+  </div>
   )
 }
 
