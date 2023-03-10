@@ -5,7 +5,7 @@ import human from "./people.jpg"
 class Comments extends React.Component {
     render() {
       return (
-        <Comment.Group>
+        <Comment.Group style = {{marginLeft: "520px"}}>
         <Header as='h3' dividing>
           Comments
         </Header>
@@ -28,7 +28,8 @@ class Comments extends React.Component {
           <Form.TextArea />
           <Button content='Add Reply' labelPosition='left' icon='edit' primary />
         </Form>
-      </Comment.Group>
+        <br />
+      </Comment.Group>     
       )
     }
   }
