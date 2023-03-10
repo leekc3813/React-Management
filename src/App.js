@@ -1,13 +1,24 @@
 import './App.css';
 import React from 'react';
-import {Button, Progress} from 'semantic-ui-react';
+import {Button, Input} from 'semantic-ui-react';
+
+function Login() {
+  return(
+    <div>
+      <Input />
+      <Button primary>로그인!</Button>
+    </div>
+  )
+}
+
 
 function App() {
   return (
     <div>
       <p> 안녕하세요</p>
-      <Button primary>하이하이</Button>
-      <Progress percent={66}></Progress>
+      <button>하이하이</button>
+      <Button >하이하이</Button>
+      <Login />
     </div>
   )
 }
